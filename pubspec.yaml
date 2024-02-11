@@ -1,0 +1,44 @@
+name: tip_calculator
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  get: ^4.6.6
+  firebase_core: ^2.25.4
+  cloud_firestore: ^4.15.4
+  flutter_native_splash: ^2.3.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/logos/
+
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logos/splash_logo.png
+  #  android_12:
+  #    image: assets/png_images/android12_logo.png
+  #    icon_background_color: "#111111"
+
+  android: true
+  ios: true
+  web: true

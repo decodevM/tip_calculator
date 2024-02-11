@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "61394975101",
+    "project_id": "tip-calculator-c3c4e",
+    "storage_bucket": "tip-calculator-c3c4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61394975101:android:19d05c0edc50db5bce3414",
+        "android_client_info": {
+          "package_name": "com.decodev.tip_calculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk4KQtFGdMbpjllHlzJ1iDY-4AaPs7GDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
