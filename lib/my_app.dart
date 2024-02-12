@@ -1,12 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 
 import 'views/home_screen.dart';
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
+
+  // Remove splash screen
+  void _removeSplashScreen() async {
+    await Future.delayed(const Duration(seconds: 3));
+    FlutterNativeSplash.remove();
+  }
+
+  @override
+  void initState() {
+    _removeSplashScreen();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
