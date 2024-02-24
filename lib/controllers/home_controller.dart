@@ -16,11 +16,8 @@ class HomeController extends GetxController {
     Get.to(() => ManageTip());
   }
 
-  Future<void> deleteTip(int index) async {
-    // Add your delete tip logic here
-  }
-
-  Future<void> updateTip(int index) async {
-    // Add your update tip logic here
+  void showTip(int index) {
+    Get.to(() => ManageTip(), arguments: {});
+    // Add your show tip logic here
   }
 }

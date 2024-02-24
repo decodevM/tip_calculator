@@ -57,12 +57,38 @@ class ManageTip extends StatelessWidget {
               const SizedBox(height: 20),
               const CustomLabel(title: 'Previous Bill Amount:', value: '0 \$'),
               const SizedBox(height: 50),
-              Center(
-                child: FilledButton(
-                  onPressed: manageTipController.addTip,
-                  child: const Text('Add Tip'),
+              if (!manageTipController.isUpdate)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: Center(
+                    child: FilledButton(
+                      onPressed: manageTipController.addTip,
+                      child: const Text('Add Tip'),
+                    ),
+                  ),
                 ),
-              )
+              if (manageTipController.isUpdate)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: Center(
+                    child: FilledButton(
+                      onPressed: manageTipController.addTip,
+                      child: const Text('Update Tip'),
+                    ),
+                  ),
+                ),
+              if (manageTipController.isUpdate)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: Center(
+                    child: FilledButton(
+                      style:
+                          FilledButton.styleFrom(backgroundColor: Colors.red),
+                      onPressed: manageTipController.addTip,
+                      child: const Text('Delete Tip'),
+                    ),
+                  ),
+                ),
             ],
           ),
         ),

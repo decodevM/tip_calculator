@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -24,7 +25,11 @@ class HomeScreen extends StatelessWidget {
           itemCount: 20,
           padding: const EdgeInsets.all(20),
           separatorBuilder: (context, index) => const SizedBox(height: 20),
-          itemBuilder: (context, index) => const TipCard(),
+          itemBuilder: (context, index) => CupertinoButton(
+            onPressed: () => homeController.showTip(index),
+            padding: EdgeInsets.zero,
+            child: const TipCard(),
+          ),
         ),
       ),
     );

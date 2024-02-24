@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class TipCard extends StatelessWidget {
   const TipCard({super.key});
@@ -25,7 +26,7 @@ class TipCard extends StatelessWidget {
                     color: Colors.deepPurple),
               ),
               Text(
-                DateTime.now().toString(),
+                DateFormat.yMd().format(DateTime.now()),
               ),
             ],
           ),

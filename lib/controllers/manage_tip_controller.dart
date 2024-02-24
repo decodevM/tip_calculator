@@ -1,8 +1,13 @@
 import 'package:get/get.dart';
 
 class ManageTipController extends GetxController {
+  bool isUpdate = false;
   @override
   void onInit() {
+    Map<dynamic, dynamic>? data = Get.arguments;
+    if (data != null) {
+      isUpdate = true;
+    }
     super.onInit();
   }
 
@@ -12,6 +17,10 @@ class ManageTipController extends GetxController {
 
   void updateTip() {
     // Add your update tip logic here
+  }
+
+  void deleteTip() {
+    // Add your delete tip logic here
   }
 
   void onUpdateTip(double value) {}
