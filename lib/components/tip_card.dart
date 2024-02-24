@@ -80,6 +80,7 @@ class TipCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
+              const VerticalDivider(),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
