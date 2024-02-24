@@ -33,6 +33,10 @@ cd tip_calculator
 flutter pub get 
 ```
 
+```bash
+flutter pub upgrade 
+```
+
 ### Usage
 - Open the project in your preferred Flutter IDE (e.g., Android Studio, Visual Studio Code).
 - Connect your device or use an emulator/simulator.
