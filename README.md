@@ -31,6 +31,7 @@ cd tip_calculator
 3. To install the project dependencies. Run this command
 ```bash
 flutter pub get 
+flutter pub upgrade 
 ```
 
 ### Usage
